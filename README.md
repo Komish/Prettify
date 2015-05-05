@@ -3,4 +3,4 @@ Prettify is a Bash helper function designed to be used within scripts to allow f
 
 ## Potential Changes
 - [ ] Add the functionality to output BBCode as opposed to Bash Colorization
-- [ ] Add the functionality to output with no colorization at all ("Normalize" color does not do this, but produces a similar effect)
+- [x] [Commit e8f8a1cf79214d4d2ac5cad3ddda2d91a091653b](https://github.com/Komish/Prettify/commit/e8f8a1cf79214d4d2ac5cad3ddda2d91a091653b) Add the functionality to output with no colorization at all ("Normalize" color does not do this, but produces a similar effect)
