@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# Colorfication of text and output
+# Colorizationn of shell output
 # for use within other bash scripts
 
-#### START COPY HERE ####
+        #### START COPY HERE ####
 function prettify {
+
+## Bash Colorization Helper Function
+## https://github.com/Komish/Prettify
+
 TEXT=$2
 
 COLOR_LOWER=$( echo $1 | tr '[:upper:]' '[:lower:]')
@@ -27,22 +31,23 @@ case $COLOR_LOWER in
     'red')
         COLOR_CHOICE=$RED   ;;
     'blue')
-		COLOR_CHOICE=$BLUE  ;;
-	'cyan')
-		COLOR_CHOICE=$CYAN ;;
-	'purple')
-		COLOR_CHOICE=$PURPLE ;;
-	'yellow')
-		COLOR_CHOICE=$YELLOW ;;
-	'white')
-		COLOR_CHOICE=$WHITE ;;
-	*)
-		COLOR_CHOICE=$NORMALIZE ;;
+        COLOR_CHOICE=$BLUE  ;;
+    'cyan')
+        COLOR_CHOICE=$CYAN ;;
+    'purple')
+        COLOR_CHOICE=$PURPLE ;;
+    'yellow')
+        COLOR_CHOICE=$YELLOW ;;
+    'white')
+        COLOR_CHOICE=$WHITE ;;
+    *)
+        COLOR_CHOICE='' 
+        NORMALIZE='' ;;
 esac
 
 echo -e "${COLOR_CHOICE}${2}${NORMALIZE}"
 }
-#### END COPY HERE ####
+        #### END COPY HERE ####
 
 # Running this script will always output
 # This help text below.
