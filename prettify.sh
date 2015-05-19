@@ -66,7 +66,7 @@ echo -e "${COLOR_CHOICE}${2}${NORMALIZE}"
 # Running this script will always output
 # This help text below.
 string="This is a string"
-echo 'Usage:  prettify [color]... [string]...'
+echo 'Usage:  prettify color "string"'
 echo 'Add colorization to text output for Bash and BBCode. Copy function and include in your scripts.'
 echo 'Running this script standalone will only ever display this output'
 echo '    Available Bash colors:'
